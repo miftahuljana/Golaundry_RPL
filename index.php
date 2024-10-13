@@ -8,7 +8,7 @@
 </head>
 <body>
    <script>
-      window.location='<?=url();?>';
+      window.location='<?=url('order/order.php');?>';
    </script>
 </body>
 </html>
