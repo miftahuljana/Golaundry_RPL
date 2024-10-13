@@ -8,7 +8,7 @@
 </head>
 <body>
    <script>
-      window.location='<?=url('paket/paket.php');?>';
+      window.location='<?=url('riwayat_transaksi/riwayat.php');?>';
    </script>
 </body>
 </html>
