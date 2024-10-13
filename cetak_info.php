@@ -1,7 +1,7 @@
 <?php
    require_once('../../_functions.php');
-   $id_ck = $_GET['id_ck'];
-   $data = query("SELECT * FROM tb_riwayat_ck WHERE id_ck = '$id_ck'")[0];
+   $id_cs = $_GET['id_cs'];
+   $data = query("SELECT * FROM tb_riwayat_cs WHERE id_cs = '$id_cs'")[0];
    // var_dump($data);
 ?>
 <!DOCTYPE html>
@@ -56,14 +56,14 @@
 
                <table class="tb_byr">
                   <tr>
-                     <th class="tb_heading">Jenis paket</th>
-                     <th class="tb_heading">Berat (Kg)</th>
+                     <th class="tb_heading">Jenis</th>
+                     <th class="tb_heading">Jumlah (Pcs)</th>
                      <th class="tb_heading">Harga Per-kilo</th>
                   </tr>
                   <tr>
                      <td><?=$data['j_paket']?></td>
-                     <td><?=$data['berat'] . " Kg"?></td>
-                     <td><?="Rp. " . $data['h_perkilo'] . " x " . $data['berat']?></td>
+                     <td><?=$data['jml_pcs'] . " Pcs"?></td>
+                     <td><?="Rp. " . $data['h_perpcs'] . " x " . $data['jml_pcs']?></td>
                   </tr>
                   <tr>
                      <th colspan="2" class="ub">Total</th>
