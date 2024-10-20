@@ -1,4 +1,4 @@
-<?php require_once('../../_functions.php');?>
+<?php require_once('../_functions.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +8,7 @@
 </head>
 <body>
    <script>
-      window.location='<?=url();?>';
+      window.location='<?=url('order/order.php');?>';
    </script>
 </body>
 </html>
